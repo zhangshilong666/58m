@@ -1,0 +1,96 @@
+html,
+body,
+html .on_search .search span:nth-of-type(2),
+body .on_search .search span:nth-of-type(2) {
+  background-color: #F6F6F6;
+}
+html form,
+body form {
+  width: auto;
+  background-color: #F6F6F6;
+  height: 34px;
+  padding: 6px 8px 6px 8px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+html form button,
+body form button {
+  width: 55px;
+  height: 100%;
+  display: block;
+  border: 0px;
+  background-color: transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FF552E;
+  font-size: 13px;
+  line-height: 34px;
+  text-align: center;
+}
+html form input,
+body form input {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  border-radius: 3px;
+  background-color: #fff;
+  padding-left: 10px;
+}
+html .on_search,
+body .on_search {
+  width: auto;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-flow: column nowrap;
+}
+html .on_search .search,
+body .on_search .search {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  margin-bottom: 5px;
+  border: 2px solid #626262;
+  border-radius: 3px;
+}
+html .on_search .search span,
+body .on_search .search span {
+  height: 32px;
+  color: #626262;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 32px;
+}
+html .on_search .search .active,
+body .on_search .search .active,
+html .on_search .search span:nth-of-type(2),
+body .on_search .search span:nth-of-type(2) {
+  background-color: #626262;
+  color: #fff;
+}
+html .on_search .search_box,
+body .on_search .search_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+html .on_search .search_box span,
+body .on_search .search_box span {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+html .on_search .search_box2,
+body .on_search .search_box2 {
+  display: flex;
+  flex-flow: column nowrap;
+  display: none;
+}
+html .on_search .search_box2 span,
+body .on_search .search_box2 span {
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}

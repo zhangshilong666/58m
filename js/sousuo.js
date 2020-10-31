@@ -1,0 +1,31 @@
+$(function(){
+	$('#zuijin').click(function(){
+		$('.search_box').css({display:'none'});
+		$('#zuijin').css({
+			background:'#626262',
+			color:'#fff'
+		})
+		$('#remen').css({
+			background:'#fff',
+			color:'#626262'
+		})
+		$('.search_box2').css({display:'flex'});
+	})
+	$('#remen').click(function(){
+		$('.search_box2').css({display:'none'});
+		$('.search_box').css({display:'flex'});
+		$('#remen').css({
+			background:'#626262',
+			color:'#fff'
+		})
+		$('#zuijin').css({
+			background:'#fff',
+			color:'#626262'
+		})
+	})
+	
+	$('button').click(function(){
+		window.location.href='index.html';
+		return false;
+	});
+})

@@ -1,0 +1,192 @@
+@img-path:"../img/";
+header{
+	display: flex;
+	flex-flow: column nowrap; 
+	.logo{
+		background-image: url("@{img-path}fabu_top.png");
+		height: 45px;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.left{
+			height: 45px;
+			display: flex;
+			flex-wrap: nowrap;
+			a{
+				&:nth-of-type(1){
+					height: 100%;
+					width: 22px;
+					background-image: url("@{img-path}logo.png");
+					background-size: 22px 20px;
+					background-repeat: no-repeat;
+					background-position: 0px 12px;
+					margin-left: 10px;
+				}
+				&:nth-of-type(2){
+					font-size: 10px;
+					height: 100%;
+					align-self: flex-start;
+					text-decoration: none;
+					color: #fff;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-left: 10px;
+					&::after{
+						top: 3px;
+						position: relative;
+						
+						width: 3px;
+						height: 3px;
+						content: "";
+						border: 3px solid #fff;
+						border-color: #fff transparent transparent transparent; 
+					}
+				}
+			}
+		}
+		.my{
+			
+			height: 45px;
+			width: 45px;
+			font-size: 10px;
+			color: #fff;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 10px;
+			flex-flow: column nowrap;
+			&::before{
+				background-image: url("@{img-path}fabu_my.png");
+				height: 19px;
+				width: 19px;
+				display: inline-block;
+				background-size: 19px;
+				content: "";
+			}
+		}
+	}
+	.index_link{
+		height: 42px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		background-color: #EEEEEE;
+		border-bottom: 2px solid #ccc;
+		a{
+			height: 42px;
+			line-height: 42px;
+			padding-left: 10px;
+			text-decoration: none;
+			font-size: 12px;
+			color: #666;
+		}
+		span{
+			font-size: 12px;
+			color: #777;
+			margin-left: 5px;
+			
+		}
+	}
+}
+section{
+	width: 100%;
+	ul{
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: #F7F7F6;
+		li{
+			height: 60px;
+			display: flex;
+			flex-flow: row nowrap;
+			background-color: #fff;
+			margin-bottom: 10px;
+			span{
+				background-image: url("@{img-path}fabu_jlt.png");
+				width: 27px;
+				height: 27px;
+				margin: 16px 14px 16px 14px;
+				box-sizing: border-box;
+				overflow: hidden;
+				
+			}
+			div{
+				flex-grow: 1;
+				height: 100%;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				h1{
+					font-size: 13px;
+					color: #333;
+				}
+				p{
+					font-size: 10px;
+					color: #999;
+					padding-top: 5px;
+				}
+			}
+			i{
+				margin:30px 20px 0px 0px;
+				border: 5px solid #ccc;
+				border-color: #ccc transparent transparent transparent;
+			}
+			.position(@num,@x,@y){
+				&:nth-of-@{num}{
+					span{
+						background-position: @x @y;
+					}
+				}
+			}
+			.position(type(1),-10px ,2px);
+			.position(type(2),-13px ,-25px);
+			.position(type(3),-13px ,-50px);
+			.position(type(4),-13px ,-80px);
+			.position(type(5),-13px ,-107px);
+			.position(type(6),-13px ,-130px);
+			.position(type(7),-13px ,-155px);
+			.position(type(8),-13px ,-180px);
+			.position(type(9),-13px ,-206px);
+			.position(type(10),-13px ,-230px);
+			.position(type(11),-40px ,-390px);
+		}
+	}
+}
+footer{
+	background-color: #3D4049;
+	height: 93px;
+	padding-top: 20px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	p{
+		height: 32px;
+		width: 300px;
+		background-color: #373A43;
+		display: flex;
+		a{
+			flex-grow: 1;
+			height: 100%;
+			text-decoration: none;
+			color: #999;
+			border: 1px solid #000;
+			font-size: 15px;
+			text-align: center;
+			line-height: 32px;
+			&:nth-of-type(2):extend(footer p .active){
+				
+			}
+		}
+		.active{
+			color: #fff;
+		}
+	}
+	span{
+			font-size: 13px;
+			margin-top: 20px;
+		}
+}

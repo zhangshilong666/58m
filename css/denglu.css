@@ -1,0 +1,155 @@
+header {
+  width: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 135px;
+}
+header .top {
+  width: 100%;
+  height: 44px;
+}
+header .top a {
+  height: 100%;
+  margin: 0px 10px;
+  display: block;
+  float: right;
+  font-size: 14px;
+  color: #666;
+  line-height: 44px;
+  text-decoration: none;
+}
+header .top a:nth-of-type(1) {
+  float: left;
+}
+header .logo {
+  height: 45px;
+  width: 50px;
+  background-image: url("../img/denglulogo.png");
+  background-repeat: no-repeat;
+  background-position: -6px -4px;
+}
+section {
+  padding: 0px 25px;
+}
+section form .username_box {
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+}
+section form .username_box input {
+  width: 100%;
+  border: 0px;
+  font-size: 13px;
+  line-height: 55px;
+}
+section form .passward_box {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+section form .passward_box input {
+  flex: 1;
+  font-size: 13px;
+  border: 0px;
+  line-height: 55px;
+}
+section form .passward_box span {
+  height: 55px;
+  line-height: 55px;
+  font-size: 10px;
+}
+section form .passward_box span::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  background-size: 15px 15px;
+  content: "";
+  background-image: url("../img/eyehide.png");
+}
+section form .button_box {
+  margin-top: 50px;
+  height: 55px;
+  width: 100%;
+}
+section form .button_box button {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #FF552E;
+  color: #fff;
+  font-size: 15px;
+  border: 0px;
+}
+section .denglufangshi {
+  display: block;
+  margin-top: 20px;
+  color: #FF552E;
+  margin-left: 20px;
+  font-size: 13px;
+}
+footer {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+footer .head {
+  width: 100%;
+  text-align: center;
+}
+footer .head div {
+  width: 100%;
+  border: 0.5px solid #ccc;
+  position: relative;
+  top: 5px;
+}
+footer .head p {
+  position: relative;
+  font-size: 10px;
+  width: 60px;
+  color: #999;
+  top: 0px;
+  left: 50%;
+  margin-left: calc(-30px);
+  background-color: #fff;
+}
+footer .choose {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .choose span {
+  width: 45px;
+  height: 45px;
+  margin: 0px 20px;
+  background-size: 45px 45px;
+}
+footer .choose span:nth-of-type(1) {
+  background-image: url("../img/qq.png");
+}
+footer .choose span:nth-of-type(2) {
+  background-image: url("../img/weibo.png");
+}
+footer .xieyi {
+  color: #999;
+}
+footer .xieyi::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  background-size: 15px 15px;
+  content: "";
+  background-image: url("../img/true.png");
+}
